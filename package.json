@@ -3,9 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start:dev": "nodemon ./src/server/server.js",
-    "start": "node ./src/server/server.js"
+    "start:dev": "NODE_ENV=development nodemon ./src/server/server.js",
+    "start": "NODE_ENV=production node ./src/server/server.js"
   },
   "keywords": [],
   "author": "",
